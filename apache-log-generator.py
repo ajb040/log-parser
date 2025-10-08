@@ -1,6 +1,14 @@
+"""
+Log Parser - Apache/Nginx Access Log Parser
+Extracts security-relevant fields from web server logs and outputs to JSON or CSV.
+
+Usage: python log_parser.py <input_log> <output_file>
+Author: Andrew Bond
+"""
+
+from datetime import datetime, timedelta
 from faker import Faker
 import random
-from datetime import datetime, timedelta
 
 fake = Faker()
 methods = ["GET", "POST", "PUT", "DELETE"]
