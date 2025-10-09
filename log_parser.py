@@ -1,3 +1,10 @@
+"""
+Log Parser - Apache/Nginx Access Log Parser
+Extracts security-relevant fields from web server logs and outputs to JSON or CSV.
+
+Usage: python log_parser.py <input_log> <output_file>
+Author: Andrew Bond
+"""
 import csv
 import json
 import re
